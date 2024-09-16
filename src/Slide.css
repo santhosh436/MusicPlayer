@@ -1,0 +1,146 @@
+
+.slider-container {
+    color: black;
+    padding: 1rem 1.5rem; /* Default padding */
+    height: auto; /* Adjust height automatically for responsiveness */
+}
+
+@media (min-width: 640px) {
+    .slider-container {
+        padding: 2rem 2rem; /* 32px padding for small screens and up */
+    }
+}
+
+@media (min-width: 1024px) {
+    .slider-container {
+        padding: 1rem 2.5rem; /* 40px padding for large screens and up */
+        height: 350px; /* Fixed height for large screens */
+    }
+}
+
+.box {
+    height: 110px; /* 9rem for mobile */
+    width: 110px; /* 9rem for mobile */
+    background-color: #E5E7EB; /* bg-gray-200 */
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    max-width: 320px; /* max-w-xs */
+}
+
+@media (min-width: 640px) {
+    .box {
+        height: 224px; /* 14rem for small screens and up */
+        width: 224px; /* 14rem for small screens and up */
+        max-width: 384px; /* max-w-sm */
+    }
+}
+
+@media (min-width: 1024px) {
+    .box {
+        height: 200px; /* 16rem for large screens and up */
+        width: 200px; /* 16rem for large screens and up */
+        max-width: 448px; /* max-w-md */
+    }
+}
+
+.box img {
+    width: 100%; /* Make image responsive */
+    height: 100%; /* Make image responsive */
+    object-fit: cover;
+}
+
+.slick-slide div {
+    margin: 0 8px; /* 8px margin for mobile */
+}
+
+@media (min-width: 640px) {
+    .slick-slide div {
+        margin: 0 12px; /* 12px margin for small screens and up */
+    }
+}
+
+@media (min-width: 1024px) {
+    .slick-slide div {
+        margin: 0 16px; /* 16px margin for large screens and up */
+    }
+}
+
+.slick-prev::before {
+    color: black !important;
+    font-size: 30px !important; /* 1.875rem for large screens */
+}
+
+@media (max-width: 640px) {
+    .slick-prev::before {
+        font-size: 24px !important; /* 1.5rem for mobile screens */
+    }
+}
+
+.slick-next::before {
+    color: black !important;
+    font-size: 30px !important; /* 1.875rem for large screens */
+}
+
+@media (max-width: 640px) {
+    .slick-next::before {
+        font-size: 24px !important; /* 1.5rem for mobile screens */
+    }
+}
+
+.group {
+    position: relative;
+}
+
+.group:hover .box {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+.group:hover .box img {
+    opacity: 0.9;
+}
+
+button {
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px; /* p-1 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    border: none;
+}
+
+button .icon {
+    font-size: 24px; /* text-xl */
+    color: #4B5563; /* text-gray-700 */
+}
+
+h2 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold; /* font-bold */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+h3 {
+    font-size: 1rem; /* text-md */
+    font-weight: 600; /* font-semibold */
+}
+
+.p-4 {
+    padding: 1rem; /* p-4 */
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bottom-2 {
+    bottom: 8px;
+}
+
+.right-2 {
+    right: 8px;
+}
